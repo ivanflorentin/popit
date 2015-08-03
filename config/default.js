@@ -10,7 +10,7 @@ module.exports = {
     show_dev_site_warning: false,
 
     server: {
-      port: 3000,
+      port: 8000,
     },
 
     force_https: false,
@@ -26,16 +26,16 @@ module.exports = {
 
     hosting_server: {
       // *.127.0.0.1.xip.io points to 127.0.0.1
-        host:       'www.127.0.0.1.xip.io',
-        base_url:   'http://www.127.0.0.1.xip.io:3000',
-        email_from: 'PopIt <popit@mysociety.org>',
+        host:       'popit.parlamentoabierto.org.py',
+        base_url:   'http://popit.parlamentoabierto.org.py:8000',
+        email_from: 'PopIt <popit@parlamentoabierto.org.py>',
     },
     instance_server: {
         // This is used to create the url to the instance site. '%s' is
         // replaced with the instance name.
-        base_url_format: "http://%s.127.0.0.1.xip.io:3000",
-        cookie_secret: 'hurgleflurdle',
-        cookie_domain: '.127.0.0.1.xip.io',
+        base_url_format: "http://%s.popit.parlamentoabierto.org.py:8000",
+        cookie_secret: 'hue2flu3rdle123',
+        cookie_domain: 'parlamentoabierto.org.py',
         files_dir:     path.normalize(__dirname + '/../../popit_files'),
     },
     MongoDB: {
